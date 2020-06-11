@@ -4,6 +4,7 @@ import "./App.css";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import Modal from "./components/Modal";
+import Cart from "./components/Cart";
 import Home from "./page/Home";
 import Products from "./page/Products";
 import Contact from "./page/Contact";
@@ -36,6 +37,7 @@ class App extends Component {
           <Route path="/contact" component={Contact} />
           <Route path="/details" component={Details} />
         </Switch>
+        <Cart />
         <Footer />
       </React.Fragment>
     );

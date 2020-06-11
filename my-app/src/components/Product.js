@@ -5,8 +5,8 @@ import { ProductConsumer } from "../context";
 import PropTypes from "prop-types";
 
 function Product(props) {
-  const { id, name, price, image, inCart, qty, company } = props.product;
-  console.log(id, name, price, qty, company);
+  const { id, name, price, image, inCart, slug, company } = props.product;
+  console.log(id, name, price, slug, company);
   return (
     <article className="product">
       <ProductConsumer>
@@ -15,7 +15,7 @@ function Product(props) {
           return (
             <div
               className="img-container"
-              onClick={() => value.detailHandler(qty)}
+              onClick={() => value.detailHandler(slug)}
             >
               <Link to="/details">
                 <img src={image} alt="product" />
@@ -24,8 +24,8 @@ function Product(props) {
                 className="cart-btn"
                 disabled={inCart ? true : false}
                 onClick={() => {
-                  value.addToCart(qty);
-                  value.openModalHandler(qty);
+                  value.addToCart(slug);
+                  value.openModalHandler(slug);
                 }}
               >
                 {inCart ? <p disabled>in cart</p> : <FaCartPlus />}

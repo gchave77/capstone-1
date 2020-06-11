@@ -32,39 +32,6 @@ const Navbar = (props) => {
                 <img src={logo} alt="Tiare Travel" width="40%" />
               </Link>
             </div>
-
-            {/* <ul className="navbar-icons">
-              <li className="navbar-items items-btn">
-                <button
-                  className="navbar-btn"
-                  type="button"
-                  onClick={props.clicked}
-                >
-                  <FaBars className="navbar-btn-icon" />
-                </button>
-              </li>
-              <li className="navbar-items">
-                <Link to="">
-                  <span>
-                    <FaSearch />
-                  </span>
-                </Link>
-              </li>
-              <li className="navbar-items">
-                <Link to="">
-                  <span>
-                    <FaUser />
-                  </span>
-                </Link>
-              </li>
-              <li className="navbar-items">
-                <Link to="">
-                  <span>
-                    <FaCartPlus />
-                  </span>
-                </Link>
-              </li>
-            </ul> */}
           </div>
         </div>
       </nav>

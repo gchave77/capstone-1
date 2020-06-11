@@ -1,15 +1,16 @@
 import React from "react";
-import { ProductConsumer } from "../context";
 import { Link } from "react-router-dom";
+import { ProductConsumer } from "../context";
 
 const Details = () => {
   return (
     <ProductConsumer>
       {(value) => {
         const {
-          qty,
+          slug,
           name,
           price,
+          count,
           description,
           company,
           inCart,
@@ -40,7 +41,7 @@ const Details = () => {
                   </h5>
                   <br></br>
                   <h6 className="details-model">
-                    Quantity Remaining: <span>{qty}</span>
+                    Quantity Remaining: <span>{count}</span>
                   </h6>
                   <br></br>
                   <p>{description}</p>
@@ -62,8 +63,8 @@ const Details = () => {
                       disabled={inCart ? true : false}
                       className="btn add-incart-btn"
                       onClick={() => {
-                        value.addToCart(qty);
-                        value.openModalHandler(qty);
+                        value.addToCart(slug);
+                        value.openModalHandler(slug);
                       }}
                     >
                       {inCart ? "in cart" : "add to cart"}

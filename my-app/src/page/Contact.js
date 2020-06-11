@@ -13,14 +13,13 @@ const Contact = () => {
       <div className="staff">
         <br></br>
         <img src={img1} alt="staff-1" />
-        <span>" "</span>
+        <span>' '</span>
         <img src={img2} alt="staff-2" />
-        <span>" "</span>
+        <span>' '</span>
         <img src={img3} alt="staff-3" />
-        <span>" "</span>
+        <span>' '</span>
         <img src={img4} alt="staff-4" />
       </div>
-      <br></br>
       <br></br>
     </div>
   );

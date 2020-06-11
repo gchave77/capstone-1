@@ -30,22 +30,22 @@ class ProductProvider extends Component {
     });
     return tempItems;
   };
-  getProduct = (qty) => {
+  getProduct = (slug) => {
     // let tempProducts = [this.state.products];
-    const product = this.state.products.find((item) => item.qty === qty);
+    const product = this.state.products.find((item) => item.slug === slug);
     console.log(product);
     return product;
   };
-  detailHandler = (qty) => {
+  detailHandler = (slug) => {
     // console.log("Hello from detailHandler");
-    const product = this.getProduct(qty);
+    const product = this.getProduct(slug);
     this.setState(() => {
       return { detailProduct: product };
     });
   };
-  addToCart = (qty) => {
+  addToCart = (slug) => {
     let tempProducts = [...this.state.products];
-    const index = tempProducts.indexOf(this.getProduct(qty));
+    const index = tempProducts.indexOf(this.getProduct(slug));
     const product = tempProducts[index];
     product.inCart = true;
     product.count = 1;
@@ -62,8 +62,8 @@ class ProductProvider extends Component {
     );
   };
 
-  openModalHandler = (qty) => {
-    const product = this.getProduct(qty);
+  openModalHandler = (slug) => {
+    const product = this.getProduct(slug);
     this.setState(() => {
       return { modalProduct: product, modalOpen: true };
     });

@@ -19,7 +19,7 @@ function footer() {
         <div className="footer-center">
           <div className="footer-one">
             <div className="footer-item">
-              <h4>Follow Me</h4>
+              <h4>Follow Us</h4>
               <ul className="follow-links-footer">
                 <li className="follow-container-footer">
                   <div className="follow-icon-container-footer1">
