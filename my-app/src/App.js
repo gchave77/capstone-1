@@ -30,6 +30,7 @@ class App extends Component {
         <Modal />
         {/* Switch component renders exact matches, while Router components render inclusively of all route matches. NOTE: Still not sure what that means, though. :-) */}
         <Switch>
+          {/* Used the exact path for proper page rendering, from Amir's react-router-dom lecture. */}
           <Route exact path="/" component={Home} />
           <Route path="/products" component={Products} />
           <Route path="/contact" component={Contact} />
