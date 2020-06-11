@@ -95,7 +95,7 @@ function footer() {
               <ul>
                 <li>
                   <Link to="">
-                    <FaEnvelope /> <span> gabechavez@gmail.com</span>
+                    <FaEnvelope /> <span> TT@gmail.com</span>
                   </Link>
                 </li>
               </ul>
