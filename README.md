@@ -1,7 +1,7 @@
 # Capstone 1 - Inventory Management System User Interface (UI)
 
-npx create-react-app my-app
-npm start
+<!-- npx create-react-app my-app -->
+<!-- npm start -->
 
 Your task is to Build an Inventory Management for the business of your choice. It can be for a grocery store, a car dealership, a jewelry shop, a cell phone store, a book store, or any other legitimate business that maintains an inventory. Take some time to plan out your strategy for completing this project. As the saying goes, <i>"If you fail to plan, you plan to fail."</i>
 
@@ -56,7 +56,7 @@ The App must be created using the <code>React.js</code> framework.
 - Error Handling when customers attempt to purchase more than what is currently available
 - Error Handling when customers search for something that is not in the inventory
 
-## **************\*\*\*\***************
+## ******\*\*******\*\*\*\*******\*\*******
 
 ## Git Instructions
 
@@ -69,4 +69,4 @@ The App must be created using the <code>React.js</code> framework.
 - [ ] Push all of your commits: <code>git push origin `<firstName-lastName>`</code>.
 - [ ] When ready for your TA to review, open a Pull Request (PR) and add your TA as a collaborator.
 
-## **************\*\*\*\***************
+## ******\*\*******\*\*\*\*******\*\*******
