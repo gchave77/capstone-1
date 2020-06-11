@@ -11,6 +11,7 @@ const Navbar = (props) => {
         <div className="navbar-center">
           <div className="first-nav">
             <div className="navbar-header">
+              {/* Link provides declarative navigation around the app. Like and 'a' tag. */}
               <Link to="/" className="logo">
                 <img src={logo} alt="Tiare Travel" width="40%" />
               </Link>

@@ -22,15 +22,17 @@ const Details = () => {
         return (
           <section className="details">
             <div className="details-center">
-              <div className="details-title">
+              {/* <div className="details-title">
                 <h2>{name}</h2>
-              </div>
+              </div> */}
               <div className="details-container">
                 <div className="details-img">
                   <img src={image} alt="product" width="100%" />
                 </div>
                 <div className="details-info">
-                  <br></br>
+                  <div className="details-title">
+                    <h2>{name}</h2>
+                  </div>
                   <h4>One week (double occupancy) :</h4>
                   <br></br>
                   <h5 className="details-price">
