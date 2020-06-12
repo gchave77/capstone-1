@@ -6,7 +6,7 @@ const Category = () => {
     <div className="category">
       <div className="category-center">
         <div className="category-div">
-          <p>categories</p>
+          {/* <p>categories</p> */}
           <span>
             {" "}
             <FaBars />
@@ -14,7 +14,7 @@ const Category = () => {
         </div>
         <div className="category-div">
           {" "}
-          <p>search...</p>
+          {/* <p>search...</p> */}
           <span>
             {" "}
             <FaSearch />
