@@ -22,9 +22,6 @@ const Details = () => {
         return (
           <section className="details">
             <div className="details-center">
-              {/* <div className="details-title">
-                <h2>{name}</h2>
-              </div> */}
               <div className="details-container">
                 <div className="details-img">
                   <img src={image} alt="product" width="100%" />

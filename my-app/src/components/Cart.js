@@ -1,32 +1,29 @@
 import React, { Component } from "react";
+import ShoppingCart from "./Modal";
 
 export class Cart extends Component {
   render() {
     return (
-      <div>
-        <br></br>
-        {/* <h1>Shoppppppping Cart</h1> */}
-        <br></br>
-      </div>
+      <ShoppingCart>
+        {(products) => {
+          const { image, name, price } = products.modalProduct;
+          console.log(products);
+
+          return (
+            <div>
+              <h5>Item picked for shopping cart </h5>
+              <br></br>
+              <img src={image} alt="product" width="200px" height="200px" />
+              <h5>{name}</h5>
+              <br></br>
+              <h5>price : {price}</h5>
+              <br></br>
+            </div>
+          );
+        }}
+      </ShoppingCart>
     );
   }
 }
 
 export default Cart;
-
-// export default function Cart(props) {
-// //   const { product } = props; //destructure
-
-// //   //React hook side effect
-// //   // React.useEffect(() => {
-// //   //   console.log("props in <Cart/>", props);
-// //   // });
-
-// //   return (
-// //     <div>
-// //       {product.map((product) => (
-// //         <div>{props.product}</div>
-// //       ))}
-// //     </div>
-//   );
-// }
